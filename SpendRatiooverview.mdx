@@ -1,0 +1,504 @@
+---
+title: "Spend Ratio overview"
+description: "Description of your new file."
+---
+
+# Spend Ratio overview
+
+### On this page:
+
+* Spend Ratio overview (*Link*)
+
+* Spend Ratio eligibility requirements (*Link*)
+
+* Add or change a Spend Ratio (*Link*)
+
+* Key terms and concepts (*Link*)
+
+  * Strict (*Link*)
+
+  * Flexible (*Link*) 
+
+  * Spend Ratios applied to Location dimensions
+
+  * Others (*Link*)
+
+* Locate additional Bid Model resources (*Link*)
+
+
+
+# Spend Ratio overview
+
+**Bid shading notice:** Bid shading lowers your bid when you can win at auction for a lower price than the Max Bid Price you specified for a campaign. Bid shading is enabled by default across all campaigns to help you bid competitively in first-price auctions without overpaying. 
+
+
+
+
+Applying any Bid Model component (Bid Modifier, Spend Ratio, Dimension Priority) to a campaign will automatically disable the bid-shading feature for that campaign.  
+
+
+
+The Spend Ratio Bid Model component allows you to take control of your campaign’s spending pattern. You can specify how much of a campaign’s total budget you’d like to allocate to each Creative, Location, or Inventory dimension that your campaign is targeting. 
+
+
+
+Note that a higher Spend Ratio percentage doesn’t determine whether the campaign will prioritize spending on a particular dimension over another. Instead, it signals the campaign to stop spending on a dimension once a certain percentage of the campaign’s budget is fulfilled. 
+
+
+
+Spend Ratios are one of the three Bid Model components that you can manage for your campaigns. Refer to Bid Modifier overview (*Link*) and Dimension Priority overview (*Link*) for more details on the other ways that you can apply Bid Model settings. 
+
+
+
+# Spend Ratio eligibility requirements
+
+All advertisers can apply Spend Ratios to a campaign; however, a campaign must meet each of these conditions before it becomes eligible. 
+
+
+
+**Requirement type**
+
+**Requirement details**
+
+**Daily spend**
+
+$100+
+
+**Campaign status** 
+
+Draft
+
+Pending
+
+Running
+
+Paused
+
+Rejected
+
+**Campaign duration**
+
+3+ days
+
+**Campaign type**
+
+Advanced
+
+
+
+# Add or change a Spend Ratio
+
+The steps you’ll follow to add or edit a Bid Model setting will differ based on the dimension category (*Link*) for which you’d like to apply the Dimension Priority, Bid Modifier, or Spend Ratio. 
+
+
+
+Refer to the dedicated resources linked below to learn how to apply a Spend Ratio or another Bid Model component based on the dimension category. 
+
+
+
+* Apply a Bid Model setting to a Creative dimension (*Link*)
+
+* Apply a Bid Model setting to a Location dimension (*Link*)
+
+* Apply a Bid Model setting to an Inventory dimension (*Link*)
+
+
+
+# Key terms and concepts
+
+## Strict
+
+A strict Spend Ratio is a firm percentage of your campaign’s total budget that you’re willing to spend for each individual item that you’re targeting within the same dimension category (Creative, Location, Inventory). The campaign will spend up to this allocated budget for each dimension unless it’s unable to for any reason. While you can designate any percentage of your campaign’s budget to each item, the total Spend Ratios for a dimension category must equal exactly 100%. 
+
+
+
+Note that you can only choose a strict Spend Ratio if no Dimension Priority (*Link*) is assigned to the same dimension(s).
+
+
+
+**Fulfilling 100% of a campaign’s budget:** Strict Spend Ratios signal the campaign to stop spending on a dimension once a certain percentage of the campaign’s budget is fulfilled. The campaign will underspend if it’s unable to allocate the full percentage of the budget that you assign to a particular dimension. 
+
+
+
+
+There’s no limit to the number of changes you can apply to the Bid Model components that you’ve assigned to a campaign. Monitor campaign performance regularly and apply optimizations, as needed, to help ensure your campaign spends in full. 
+
+
+
+### Example: Strict spend ratio
+
+
+
+An advertiser wants to apply Bid Model settings to the Inventory dimension category. They specify a strict Spend Ratio for two Publisher Categories: 70% for the **Books & Literature** category, and 30% for the **Fine Art** category. 
+
+
+
+**Publisher Category**
+
+**Spend Ratio**
+
+**Spend Ratio Method**
+
+**Books & Literature**
+
+70%
+
+Strict
+
+**Fine Art**
+
+30%
+
+Strict
+
+
+
+The campaign will stop serving ads targeted for **Books & Literature** once it spends 70% of the campaign’s total budget on those ad placements, and for **Fine Art** once it spends 30%. 
+
+
+
+## Flexible
+
+A flexible Spend Ratio defines how much you’d like to spend for each individual item that you’re targeting within the same dimension category (Creative, Location, Inventory). But, unlike with a strict Spend Ratio, a flexible Spend Ratio will reallocate budget to lower-priority items if it’s unable to spend the maximum allocation for any reason. In other words, a flexible Spend Ratio is a guideline with the ultimate goal of spending the full campaign budget. 
+
+
+
+While you can designate any percentage of your campaign’s budget to each item, the total Spend Ratios for a dimension category must equal or exceed 100%. 
+
+
+
+**Required Bid Model components:** The Dimension Priority Bid Model component is required for any dimensions that are assigned a flexible Spend Ratio. This step tells the campaign the order in which it should attempt to deliver impressions across each of those dimensions. Refer to Dimension Priority overview (*Link*) for more details on priorities, and review the example below for a representation of how these two Bid Model components work when both are applied to the same dimension. 
+
+
+
+### Example: Flexible Spend Ratio and Dimension Priority
+
+An advertiser wants to apply Bid Model settings to the Location dimension category. They specify a flexible Spend Ratio for three ZIP codes: 100% for **ZIP code 1**, 80% for **ZIP code 2**, and 70% for **ZIP code 3**. With a flexible Spend Ratio, the platform can serve a budget of up to those percentages for the ZIP code that’s associated with them. 
+
+The Dimension Priority Bid Model component is required for dimensions that are assigned a flexible Spend Ratio. The advertiser chooses for the platform to prioritize **ZIP code 1**, followed by **ZIP code 2** and **ZIP code 3**. 
+
+| ZIP code   | Priority | Spend Ratio | Spend Ratio Method |
+| ---------- | -------- | ----------- | ------------------ |
+| ZIP code 1 | 1        | 100%        | Flexible           |
+| ZIP code 2 | 2        | 80%         | Flexible           |
+| ZIP code 3 | 3        | 70%         | Flexible           |
+| Others\*   | 4        | 100%        | Flexible           |
+
+\* *Refer to Others (link) for more information.*&#x20;
+
+
+
+
+
+**ZIP code**
+
+**Priority**
+
+**Spend Ratio**
+
+**Spend Ratio Method**
+
+**ZIP code 1**
+
+1
+
+100%
+
+Flexible
+
+**ZIP code 2**
+
+2
+
+80%
+
+Flexible
+
+**ZIP code 3**
+
+3
+
+70%
+
+Flexible
+
+**Others\***
+
+4
+
+100%
+
+Flexible
+
+*\*Refer to Others (Link) for more information.* 
+
+
+
+With the Dimension Priority and flexible Spend Ratio dimensions both applied, any of these outcomes are possible based on the available bid requests and other factors:
+
+
+
+<img height="351" width="624" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfDPYkgV-A4DiIXkeU1KJvP12O86v7DdWBEKry2mKyOnOasBVgGWy0S8sVUT8Gphc-DYnFtbovUXMyR_gxK_OzyzSBaVODegL5x0-uDcRcXTRZeRog84RW-aIJopfXhSYOf2D0FtQ?key=X6tpgJYyMRkFPrfpeqiYq0in" />
+
+
+
+* **Pacing or pacing ahead:** The entire campaign budget (100%) will serve to only **ZIP code 1**. No other dimension values (**ZIP code 2**, **ZIP code 3**, **Others**) will get served. 
+
+* **Pacing behind scenario 1:** Most of the ads will serve to **ZIP code 1**, before moving onto **ZIP code 2**. The rest of the campaign budget is spent on **ZIP code 2**, so no ads are served to **ZIP code 3** or **Others**. 
+
+* **Pacing behind scenario 2:** All dimensions (**ZIP code 1**, **ZIP code 2**, **ZIP code 3**, **Others**) eventually begin serving ads because none of the priorities are pacing as expected. 
+
+* **Pacing behind scenario 3:** Most or all of the ad serving takes place in the **Others** ZIP code group if priorities 1, 2, and 3 are not spending at all or are pacing behind. 
+
+
+
+These possible outcomes illustrate that a waterfall approach is applied to dimensions that are assigned both a Dimension Priority and a flexible Spend Ratio. 
+
+
+
+## Others
+
+**Others** is listed in the Bid Model table any time you choose to apply Bid Model settings to only certain dimensions in a dimension category (*Link*). In other words, **Others** aggregates all of the items you’re targeting in the same dimension category that don’t have a Spend Ratio, Dimension Priority, or Bid Modifier applied to them. It may also include items that your campaign isn’t directly targeting, but that appeared in its serving data within the past three months.
+
+
+
+You can apply the desired Spend Ratio percentages to certain dimensions, and use the **Others** field to bring the sum of your strict Spend Ratio percentages up to the required 100%. Refer to the example below for more details on how the **Others** field works. 
+
+### Example: Others - Strict Spend Ratio 
+
+An advertiser creates a campaign and targets the following five states: 
+
+
+
+* Alaska
+
+* California
+
+* Florida
+
+* New York 
+
+* Arizona
+
+
+
+They want to define a strict Spend Ratio for the Arizona (50%) and Alaska (25%) dimensions, but don’t have a preferred Spend Ratio for the other states that their campaign is targeting:
+
+
+
+<img height="347" width="624" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfIbxQsYyWc3pN0Lxgy9XatQ0MvlQMAkrlOlDfGPTDaqMOpYaI3yZtyCMhEQv3QY-P4ujLFxehbOVnjOBTDhqBM69MxG5mq0d2AG3S2ZvL0UwLBIY9p5r8g9saH1F7zGc9aLx1CBA?key=X6tpgJYyMRkFPrfpeqiYq0in" />
+
+* **States:** The advertiser adds the **Arizona** and **Alaska** states to their **Modeled States** list. All of the other states that the campaign is targeting are automatically captured in **Others**. 
+
+* **Spend Ratio Method:** They select a **Strict** method. 
+
+* **Spend Ratio**: They define a Spend Ratio for the **Arizona (50%)** and **Alaska (25%)** states. Since the strict Spend Ratio percentages must total 100%, they subtract the two percentages from 100% to arrive at the percentage for all of the other states that the advertiser’s campaign is targeting **\[Others (25%)]**. 
+
+
+
+The campaign will stop serving ads targeted for Alaska**** once it spends 50% of the campaign’s total budget on those ad placements, and for Arizona once it spends 25%. If these thresholds are never reached during the campaign duration, then this campaign will underspend. Regularly monitor performance to update the campaign’s Spend Ratio or other Bid Model components (*Link*), as needed. 
+
+
+
+
+## Spend Ratios applied to Location dimensions
+
+Bid Modeling can be applied to one Location dimension category (State, City, or ZIP Code) at a time. Since cities are subsets of states—and ZIP codes are subsets of cities—ad serving might only be possible for certain dimensions that your campaign is targeting. 
+
+
+
+<img height="351" width="624" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcLUc8xF3sMWQMX0VgIkicm3XfP9vxc0tokXdKtb8LjNDMg2Vvsk32gl7HTYnOEDt0ITnYwNx8x609HtMIYwodf29z4-vuV0PqHSAeVU8dckHXqiyBitJYxiM4WlaG74wsQhRNpow?key=X6tpgJYyMRkFPrfpeqiYq0in" />
+
+
+
+Refer to the examples below for more information on how Bid Model settings work for each Location dimension category, and in flexible and strict environments. 
+
+
+
+### Example: Modeled Location dimensions with strict Spend Ratios
+
+When strict Spend Ratios are applied to Location dimensions, ad serving may be disabled for certain targeted dimensions. 
+
+
+
+In this example, an advertiser creates a campaign and targets five states:
+
+
+
+* California
+
+* Florida
+
+* New York
+
+* Texas
+
+* Oregon
+
+
+
+The campaign also targets the following three cities: 
+
+
+
+* Los Angeles, California
+
+* New York, New York
+
+* Seattle, Washington
+
+
+
+The advertiser wants to apply Bid Model settings to a Location dimension category, and chooses States. They choose the following Spend Ratios and dimensions: 
+
+
+
+**States**
+
+**Spend Ratio**
+
+**Spend Ratio Method**
+
+**California**
+
+60%
+
+Strict
+
+**Florida**
+
+15%
+
+Strict
+
+**New York**
+
+25%
+
+Strict
+
+**Others\***
+
+0%
+
+Strict
+
+\*In this example, Texas and Oregon are captured in the **Others** category. With a strict Spend Ratio of 0%, ad serving is disabled for these states. 
+
+
+
+The campaign is targeting one city that isn’t located in any of the modeled states: **Seattle, Washington**. As a result, ad serving is disabled for this city regardless of the campaign’s pacing performance. 
+
+
+
+### Example: Modeled Location dimensions with flexible Spend Ratios
+
+When strict Spend Ratios are applied to Location dimensions, ad serving may be enabled for certain dimensions that the campaign is targeting, but which aren’t included in the campaign’s modeled States, Cities, or ZIP Codes. 
+
+
+
+In this example, an advertiser creates a campaign and targets five states:
+
+
+
+* California
+
+* Florida
+
+* New York
+
+* Texas
+
+* Arizona
+
+
+
+The campaign also targets the following three cities: 
+
+
+
+* Los Angeles, California
+
+* New York, New York
+
+* Seattle, Washington
+
+
+
+The advertiser wants to apply Bid Model settings to a Location dimension category, and chooses States. They choose the following Spend Ratios, Dimension Priorities, and dimensions: 
+
+
+
+**States**
+
+**Dimension Priority**
+
+**Spend Ratio**
+
+**Spend Ratio Method**
+
+**California**
+
+1
+
+60%
+
+Flexible
+
+**Florida**
+
+2
+
+15%
+
+Flexible
+
+**New York**
+
+3
+
+25%
+
+Flexible
+
+**Others\***
+
+4
+
+20%
+
+Flexible
+
+\*The unmodeled states (**Texas** and **Arizona**) are captured in **Others**. 
+
+
+
+The campaign attempts to fill its budget with the highest-priority dimensions as outlined in the Key terms and concepts: Flexible spend ratio (*Link*) section above. Due to pacing behind, ad serving is ultimately enabled for all three modeled **State** dimensions: **California**, **Florida**, and **New York**, and the unmodeled states captured in **Others**. 
+
+
+
+As a reminder, the campaign is targeting the **Seattle, Washington** city, which isn’t included in any of the three modeled **State** dimensions. However, the campaign continues to pace behind after all **Priority 1**, **Priority 2**, **Priority 3**, and **Priority 4**. As a result, ad serving is enabled for the **Seattle, Washington** **City** dimension in an attempt to spend the campaign’s budget in full. 
+
+
+
+# Locate additional Bid Model resources
+
+* Bid Model overview (*Link*)
+
+* Dimension Priority overview (*Link*)
+
+* Bid Modifier overview (*Link*)
+
+* Apply a Bid Model setting to a Location dimension (*Link*)
+
+* Apply a Bid Model setting to a Creative dimension (*Link*)
+
+* Apply a Bid Model setting to an Inventory dimension (*Link*) 
+
+* Bid Model frequently asked questions (FAQ) (*Link*) 
+
+
+
+
+
+*Return to the top of this article* (*Link*)
