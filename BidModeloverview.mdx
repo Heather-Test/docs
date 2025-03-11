@@ -27,21 +27,21 @@ description: "Description of your new file."
 
 No two campaigns are the same. Monitoring real-time performance and continually refining your strategy are crucial to ensure every dollar is spent efficiently—but this presents a challenge when you’re managing several campaigns simultaneously. 
 
-A Bid Model is a high-performance machine that you can steer to optimize your campaigns. You create a set of rules that the Bid Model deploys as the campaign runs. With intuitive controls, you can adjust bids with Bid Modifiers (*Link*), allocate budgets with [Spend Ratios](https://iqm-197a61a3.mintlify.app/SpendRatiooverview), and define priorities with Dimension Priorities (*Link*) to optimize performance in real time. 
+A Bid Model is a high-performance machine that you can steer to optimize your campaigns. You create a set of rules that the Bid Model deploys as the campaign runs. With intuitive controls, you can adjust bids with [Bid Modifiers](https://iqm-197a61a3.mintlify.app/BidModifieroverview), allocate budgets with [Spend Ratios](https://iqm-197a61a3.mintlify.app/SpendRatiooverview), and define priorities with [Dimension Priorities](https://iqm-197a61a3.mintlify.app/DimensionPriorityoverview) to optimize performance in real time. 
 
 
 
 # Bid Model eligibility requirements
 
-All advertisers can manage Bid Model components for their campaigns; however, a campaign must meet certain conditions before it becomes eligible. These conditions differ based on the individual Bid Model component (*Link*) that you’d like to apply. 
+All advertisers can manage Bid Model components for their campaigns; however, a campaign must meet certain conditions before it becomes eligible. These conditions differ based on the individual [Bid Model component](https://iqm-197a61a3.mintlify.app/BidModeloverview#bid-model-components) that you’d like to apply. 
 
 Refer to these resources for more information on component-level eligibility requirements:
 
-* [Spend Ratio eligibility requirements](https://iqm-197a61a3.mintlify.app/SpendRatiooverview#spend-ratio-eligibility-requirements) (*Link*)
+* [Spend Ratio eligibility requirements](https://iqm-197a61a3.mintlify.app/SpendRatiooverview#spend-ratio-eligibility-requirements)&#x20;
 
-* [Dimension Priority eligibility requirements](https://iqm-197a61a3.mintlify.app/DimensionPriorityoverview#dimension-priority-eligibility-requirements) (*Link*)
+* [Dimension Priority eligibility requirements](https://iqm-197a61a3.mintlify.app/DimensionPriorityoverview#dimension-priority-eligibility-requirements)&#x20;
 
-* Bid Modifier eligibility requirements (*Link*) 
+* [Bid Modifier eligibility requirements](https://iqm-197a61a3.mintlify.app/BidModifieroverview#bid-modifier-eligibility-requirements)&#x20;
 
 Campaigns support Bid Modeling on up to 100 dimension values. 
 
@@ -49,7 +49,7 @@ Campaigns support Bid Modeling on up to 100 dimension values. 
 
 # Bid Model components 
 
-When you apply a Bid Model setting, you define rules across one or more Bid Model components for a particular dimension (*Link*). These components include Spend Ratios, Dimension Priorities, and Bid Modifiers. The Bid Model also includes the option to add individual dimensions to a campaign’s Allowlist or Blocklist when those dimensions appear in the campaign’s ad-serving data. 
+When you apply a Bid Model setting, you define rules across one or more Bid Model components for a particular [dimension](https://iqm-197a61a3.mintlify.app/BidModeloverview#supported-dimensions). These components include Spend Ratios, Dimension Priorities, and Bid Modifiers. The Bid Model also includes the option to add individual dimensions to a campaign’s Allowlist or Blocklist when those dimensions appear in the campaign’s ad-serving data. 
 
 While these granular adjustments are optional, they allow you to take greater control of your campaign’s optimizations and, ultimately, its performance. 
 
@@ -61,37 +61,25 @@ While these granular adjustments are optional, they allow you to take greater co
 
 * **Allowlist/Blocklist:** Block or enable ad serving for individual dimensions that have appeared in the ad-serving data. 
 
-Refer to Spend Ratio overview (*Link*), Dimension Priority overview (*Link*), and Bid Modifier overview (*Link*) for more information about these individual Bid Model components. 
+Refer to [Spend Ratio overview](https://iqm-197a61a3.mintlify.app/SpendRatiooverview), [Dimension Priority overview](https://iqm-197a61a3.mintlify.app/DimensionPriorityoverview), and [Bid Modifier overview](https://iqm-197a61a3.mintlify.app/BidModifieroverview) for more information about these individual Bid Model components. 
+
+
 
 # Supported dimensions
 
-Dimensions are the different targeting parameters that you can adjust by applying one or more Bid Model components (*Link*) to them. Bid Modeling is supported across the **Creative**, **Location**, and **Inventory** dimension categories.  
+Dimensions are the different targeting parameters that you can adjust by applying one or more [Bid Model components](https://iqm-197a61a3.mintlify.app/BidModeloverview#bid-model-components) to them. Bid Modeling is supported across the **Creative**, **Location**, and **Inventory** dimension categories.  
 
-**Dimension category notice:** Bid Modeling can be applied to one **dimension subcategory** at a time for each **dimension category**. For example, you can set Bid Model settings for a list of Creative IDs, States, and Deal IDs; but not Creative IDs, States, ZIP Codes, and Deal IDs.  
+<Warning>
+  **Dimension category notice:** Bid Modeling can be applied to one **dimension subcategory** at a time for each **dimension category**. For example, you can set Bid Model settings for a list of Creative IDs, States, and Deal IDs; but not Creative IDs, States, ZIP Codes, and Deal IDs.  
+</Warning>
 
-**Dimension category**
+| Dimension category | Dimension subcategory                      |
+| ------------------ | ------------------------------------------ |
+| **Creative**       | Creative ID                                |
+| **Location**       | State, City, ZIP Code                      |
+| **Inventory**      | Open Exchange, Publisher Category, Deal ID |
 
-**Dimension subcategory**
 
-**Creative**
-
-Creative ID
-
-**Location**
-
-State
-
-City
-
-ZIP Code
-
-**Inventory**
-
-Open Exchange
-
-Publisher Category
-
-Deal ID
 
 # Key terms and concepts
 
@@ -105,7 +93,7 @@ The Bid Model engine assesses whether serving is enabled for a dimension at each
 
 \* *This graphic is a simplified version of the logic that a Bid Model applies to determine whether or not it should bid on an ad opportunity when multiple Bid Model components are defined for the same dimensions.* 
 
-Refer to the examples included Spend Ratio overview (*Link*), Dimension Priority overview (*Link*), and Bid Modifier overview (*Link*) for more details and examples of how these Bid Model components work individually and in tandem. 
+Refer to the examples included [Spend Ratio overview](https://iqm-197a61a3.mintlify.app/SpendRatiooverview), [Dimension Priority overview](https://iqm-197a61a3.mintlify.app/DimensionPriorityoverview), and [Bid Modifier overview](https://iqm-197a61a3.mintlify.app/BidModifieroverview) for more details and examples of how these Bid Model components work individually and in tandem. 
 
 ## Campaign Bidding Insights report
 
@@ -113,22 +101,24 @@ In certain cases, the granular campaign rules that you apply via Bid Model setti
 
 Refer to [<u>Campaign Bidding Insights overview</u>](https://help.iqm.com/en/articles/10111445-campaign-bidding-insights-overview) for more information, and review [<u>“Reporting and analytics” collection overview</u>](https://help.iqm.com/en/articles/10471834-reporting-and-analytics-collection-overview) for a complete list of reporting and insights resources. 
 
+
+
 # Locate additional Bid Model resources
 
-* Bid Modifier overview (*Link*)
+* [Bid Modifier overview](https://iqm-197a61a3.mintlify.app/BidModifieroverview)&#x20;
 
-* Dimension Priority overview (*Link*)
+* [Dimension Priority overview](https://iqm-197a61a3.mintlify.app/DimensionPriorityoverview)&#x20;
 
-* Spend Ratio overview (*Link*)
+* [Spend Ratio overview](https://iqm-197a61a3.mintlify.app/SpendRatiooverview)
 
-* Apply a Bid Model setting to a Location dimension (*Link*)
+* [Apply a Bid Model setting to a Location dimension](https://iqm-197a61a3.mintlify.app/ApplyaBidModelsettingtoaLocationdimension)
 
-* Apply a Bid Model setting to a Creative dimension (*Link*)
+* [Apply a Bid Model setting to a Creative dimension](https://iqm-197a61a3.mintlify.app/ApplyaBidModelsettingtoaCreativedimension)&#x20;
 
-* Apply a Bid Model setting to an Inventory dimension (*Link*)  
+* [Apply a Bid Model setting to an Inventory dimension ](https://iqm-197a61a3.mintlify.app/ApplyaBidModelsettingtoanInventorydimension)
 
-* Bid Model frequently asked questions (FAQ) (*Link*) 
+* [Bid Model frequently asked questions (FAQ)](https://iqm-197a61a3.mintlify.app/BidModelfrequentlyaskedquestionsFAQ)
 
  
 
-*Return to the top of this article* (*Link*)
+[*Return to the top of this article*](https://iqm-197a61a3.mintlify.app/BidModeloverview)
